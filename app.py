@@ -22,8 +22,23 @@ from utils.util import mkdir, label_color, get_img_path
 
 
 
-import streamlit as st
-st.text('This is TEXT')
+st.write("""
+# Combining computer vision with fuzzy logic for real-time detection of personal protective equipment non-use
+### Amirhossein Ghadiri
+""")
+
+st.text("")
+st.text("")
+st.text("")
+
+st.write("""
+NOTE: The PPE non-use Detection System is explained in 'Combining computer vision with fuzzy logic for real-time detection of personal protective equipment non-use.' Comprehensive system details and its mechanism will be elaborated as soon as the article is published. 
+""")
+
+st.text("")
+st.text("")
+st.text("")
+
 
 
 
