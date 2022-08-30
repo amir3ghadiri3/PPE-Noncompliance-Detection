@@ -1270,9 +1270,7 @@ from tensorflow.keras.preprocessing.image import load_img
 from tempfile import NamedTemporaryFile
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-        
-image_demo = cv2.imread('./data/inference.png')
-    
+            
 # url = 'https://drive.google.com/uc?export=download&id=1upo5sgFRlAZiPYXm7-nf-yv6ajqkINCz'
 # outputt = 'YOLOX.pth'
 # gdown.download(url, outputt, quiet=False)
@@ -1813,7 +1811,7 @@ st.write("""
 #     st.write("""
 #     ### Demo:
 #     """)
-#     st.image(image_demo)    
+#     st.image('./data/inference.png')    
 
     
     
@@ -1821,7 +1819,7 @@ st.write("""
 st.write("""
 ### Demo:
 """)
-st.image(image_demo)    
+st.image('./data/inference.png')    
     
     
    
