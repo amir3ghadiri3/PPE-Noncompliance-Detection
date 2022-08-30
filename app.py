@@ -1271,7 +1271,8 @@ from tempfile import NamedTemporaryFile
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
         
-        
+image_demo = cv2.imread('./data/inference.png')
+    
 # url = 'https://drive.google.com/uc?export=download&id=1upo5sgFRlAZiPYXm7-nf-yv6ajqkINCz'
 # outputt = 'YOLOX.pth'
 # gdown.download(url, outputt, quiet=False)
@@ -1292,11 +1293,20 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 # detector = Detector(opt)
 
 
-
 # Uploaded_images = st.file_uploader("Please upload .jpg images containing construction workers", type='jpg', accept_multiple_files=True)
 
+st.text("")
+st.text("")
+st.text("")
+
+
+st.write("""
+## Detection Results
+""")
+
+
 # temp_file = NamedTemporaryFile(delete=False)
-# if Uploaded_images:
+if Uploaded_images:
 #     for image in Uploaded_images:
 #         temp_file.write(image.getvalue())
 
@@ -1799,7 +1809,10 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 #         st.image(img)
 
            
-           
+else:
+    st.write("""
+    ### Demo:
+    """)
               
         
     
