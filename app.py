@@ -1809,11 +1809,11 @@ st.write("""
 #         st.image(img)
 
            
-else:
-    st.write("""
-    ### Demo:
-    """)
-    st.image(image_demo)    
+# else:
+#     st.write("""
+#     ### Demo:
+#     """)
+#     st.image(image_demo)    
 
     
     
