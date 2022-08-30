@@ -1811,7 +1811,7 @@ st.write("""
 #     st.write("""
 #     ### Demo:
 #     """)
-#     st.image('./data/inference.png')    
+#     st.image('data/inference.png')    
 
     
     
@@ -1819,7 +1819,7 @@ st.write("""
 st.write("""
 ### Demo:
 """)
-st.image('./data/inference.png')    
+st.image('data/inference.png')    
     
     
    
