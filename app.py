@@ -20,6 +20,7 @@ from config import opt
 from models.yolox import Detector
 from utils.util import mkdir, label_color, get_img_path
 
+import streamlit as st
 
 
 st.write("""
