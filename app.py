@@ -24,7 +24,7 @@ import streamlit as st
 
 
 st.write("""
-## Combining computer vision with fuzzy logic for real-time detection of personal protective equipment non-use
+# Combining computer vision with fuzzy logic for real-time detection of personal protective equipment non-use
 ### Amirhossein Ghadiri
 """)
 
