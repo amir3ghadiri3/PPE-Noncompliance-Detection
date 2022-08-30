@@ -1306,7 +1306,7 @@ st.write("""
 
 
 # temp_file = NamedTemporaryFile(delete=False)
-if Uploaded_images:
+# if Uploaded_images:
 #     for image in Uploaded_images:
 #         temp_file.write(image.getvalue())
 
@@ -1813,7 +1813,15 @@ else:
     st.write("""
     ### Demo:
     """)
-              
+    st.image(image_demo)    
+
+    
+    
         
+st.write("""
+### Demo:
+""")
+st.image(image_demo)    
+    
     
    
