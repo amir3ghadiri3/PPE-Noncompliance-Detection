@@ -4,7 +4,7 @@ import cv2
 import tqdm
 import time
 
-from keras.preprocessing import image
+# from keras.preprocessing import image
 from matplotlib.pyplot import imshow
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -1430,8 +1430,8 @@ if Uploaded_images:
             classification_total_time_start = time.time()
 
 
-        imgtotal = image.load_img(temp_file.name)
-        imgtotal = image.img_to_array(imgtotal)
+        imgtotal = load_img(temp_file.name)
+        imgtotal = img_to_array(imgtotal)
 
         human_list = []
         FUZZY_human_coordinates_list = []
@@ -1444,6 +1444,8 @@ if Uploaded_images:
             human_list.append(humanimg)
             FUZZY_human_coordinates_list.append(FUZZY_human_coordinates)
 
+        st.text(str(len(human_list)))   
+        
         if len(human_list) != 0 :
             all_human = human_list[0]
             all_human = np.expand_dims(all_human, axis=0)
@@ -1814,8 +1816,3 @@ else:
     st.image('data/Inference.png')    
 
     
-    
-          
-    
-    
-   
